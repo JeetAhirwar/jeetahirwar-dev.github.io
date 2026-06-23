@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <script>
+      // SPA fallback for GitHub Pages: preserve the requested path and redirect to /
+      // The app reads window.__redirect__ on boot and replaces history.
+      (function () {
+        var path = window.location.pathname + window.location.search + window.location.hash;
+        sessionStorage.setItem("spa_redirect", path);
+        window.location.replace("/");
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>
